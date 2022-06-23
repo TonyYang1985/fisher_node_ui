@@ -1,24 +1,25 @@
 {
-  "name": "@fot/fisher_node_ui",
-  "version": "1.0.0",
+  "name": "@fot/back_office_ui",
+  "version": "1.0.1",
+  "license": "MIT",
   "engines": {
     "node": ">=14.16.x",
     "yarn": ">=1.22.x"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "dev": "next dev",
     "devsg": "cross-env DEV_ZONE=sg next dev",
     "build": "next build",
     "start": "next start",
+    "api": "scripts/downloadAPI.sh",
     "lint:ts": "tsc --noEmit && eslint '*/**/*.{ts,tsx}' --quiet --fix",
     "precommit": "yarn lint:ts",
     "prepare": "husky install",
     "gen:idx": "cti create ./src/libs && yarn lint:ts",
     "pub": "scripts/publish.sh"
+  },
+  "resolutions": {
+    "@types/react": "17.0.37"
   },
   "dependencies": {
     "@fot/globalstorage": "^1.0.0",
@@ -50,12 +51,12 @@
     "next-transpile-modules": "^9.0.0",
     "primeflex": "^3.1.0",
     "primeicons": "^5.0.0",
-    "primereact": "^7.2.1",
+    "primereact": "^7.0.1",
     "prismjs": "^1.25.0",
     "quill": "^1.3.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
     "react-currency-input-field": "^3.6.0",
+    "react-dom": "17.0.2",
     "react-highlight-words": "^0.17.0",
     "react-no-ssr": "^1.1.0",
     "react-transition-group": "^4.4.2",
@@ -89,7 +90,7 @@
     "@types/react": "17.0.37",
     "@types/react-dom": "17.0.11",
     "@types/react-no-ssr": "^1.1.3",
-    "@types/react-transition-group": "^4.4.5",
+    "@types/react-transition-group": "^4.4.4",
     "@types/stylelint": "13.13.3",
     "@types/yup": "^0.29.13",
     "@typescript-eslint/eslint-plugin": "^5.6.0",

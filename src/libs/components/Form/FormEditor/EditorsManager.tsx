@@ -64,7 +64,7 @@ export function getEditorsFromSchema<P>(schema: EditorSchema<P>, valueObject: P,
         return ERROR(trans(`${transLabelPrefix}.${field}`), `Displayer "text" is not found.`);
       }
     } else if (Array.isArray(spec)) {
-      const field = spec[0];
+      const field: any = spec[0];
       const factory = editorFactories[spec[1] ?? 'text'];
       if (typeof factory == 'function') {
         const props = spec[2] ?? {};

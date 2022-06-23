@@ -1,7 +1,7 @@
 import { globalStorage } from '@fot/globalstorage';
 import { useTranslation } from 'next-i18next';
 import { Toast } from 'primereact/toast';
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 export type NotifierProps = {
   timeout?: number;

@@ -11,7 +11,8 @@ else
     yarn rollup -c && \
     cp .npmrc release/  && \
     cp .yarnrc release/  && \
-    cd release 
+    cd release && \
+    yarn publish --non-interactive
 fi  
 
 

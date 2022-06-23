@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import { Chip } from 'primereact/chip';
 import { Skeleton } from 'primereact/skeleton';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { formatValue } from 'react-currency-input-field';
 import { datetime } from '../../../utils/datetime';
 import { resolveValue } from '../../../utils/misc';

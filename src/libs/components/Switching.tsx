@@ -1,7 +1,7 @@
 import { RestClient } from '@fot/restclient';
 import Router from 'next/router';
 import { ProgressSpinner } from 'primereact/progressspinner';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 class SwitchingStore {
   loading = false;

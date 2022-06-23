@@ -1,5 +1,4 @@
 import { Dropdown, DropdownProps } from 'primereact/dropdown';
-import React from 'react';
 import { TIMEZONES } from '../utils/timezones';
 
 const timezoneOptions = Object.keys(TIMEZONES).map((tz) => ({ label: tz, value: TIMEZONES[tz] }));

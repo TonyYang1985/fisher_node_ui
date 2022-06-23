@@ -1,5 +1,5 @@
 import { TFunction } from 'next-i18next';
-import React, { PropsWithChildren } from 'react';
+import { PropsWithChildren } from 'react';
 import { PropsWithTrans } from '../../i18n';
 import { PaginationIn, Query } from '../../Pagination';
 import { DataSource } from '../DataSource';

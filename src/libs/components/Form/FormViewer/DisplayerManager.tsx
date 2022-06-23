@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { TFunction, useTranslation } from 'next-i18next';
 import { Message } from 'primereact/message';
-import React, { PropsWithChildren } from 'react';
+import { PropsWithChildren } from 'react';
 import { EditorDefinedProps, EditorFactory, EditorFactoryArgs, EditorProps, EditorType } from '../FormEditor/EditorsManager';
 
 export type DisplayerDefinedProps = EditorDefinedProps;
@@ -44,7 +44,7 @@ export function getDisplayerFromSchema<P>(schema: DisplayerSchema<P>, valueObjec
         return ERROR(trans(`${transLabelPrefix}.${field}`), `Displayer "text" is not found.`);
       }
     } else if (Array.isArray(spec)) {
-      const field = spec[0];
+      const field: any = spec[0];
       const factory = displayerFactories[spec[1] ?? 'text'];
       if (typeof factory == 'function') {
         if (spec[2] && typeof spec[2]['validate'] === 'function') {

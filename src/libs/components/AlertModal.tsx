@@ -21,7 +21,7 @@ class AlertModalStore {
 
   open = false;
 
-  callback = () => { };
+  callback = () => {};
 }
 
 export class AlertModalController extends BaseController {

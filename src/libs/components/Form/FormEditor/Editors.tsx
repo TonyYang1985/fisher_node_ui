@@ -11,7 +11,7 @@ import { InputTextarea } from 'primereact/inputtextarea';
 import { Password } from 'primereact/password';
 import { RadioButton } from 'primereact/radiobutton';
 import { Skeleton } from 'primereact/skeleton';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { resolveValue } from '../../../utils/misc';
 import { getTransaltedText } from '../FormViewer/DisplayerManager';
 import { addWidgetFactory, EditorFactoryArgs, EditorWrapper, isInvalid } from './EditorsManager';

@@ -18,7 +18,7 @@ Object.assign(packageJson, {
 
 export default [
   {
-    input: 'temp/src/libs/index.js',
+    input: 'temp/index.js',
     output: [
       {
         file: packageJson.main,
@@ -46,7 +46,7 @@ export default [
     ],
   },
   {
-    input: 'temp/src/libs/index.d.ts',
+    input: 'temp/index.d.ts',
     output: [{ file: packageJson.types, format: 'es' }],
     plugins: [excludeDependenciesFromBundle(), dts()],
   },

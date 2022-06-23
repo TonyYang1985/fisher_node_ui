@@ -4,7 +4,7 @@ import _ from 'lodash';
 import { TFunction, useTranslation } from 'next-i18next';
 import { Message } from 'primereact/message';
 import { Messages } from 'primereact/messages';
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { FormError } from './FormError';
 
 function doWithFormik<T>(formikProps: FormikProps<T>) {

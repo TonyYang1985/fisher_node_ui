@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { FileUpload, FileUploadProps } from 'primereact/fileupload';
-import React from 'react';
 import { restClient } from '../RC';
 import { DataSource, RestClientDS } from './DataSource';
 

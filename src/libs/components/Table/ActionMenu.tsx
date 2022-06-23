@@ -6,7 +6,7 @@ import { Button } from 'primereact/button';
 import { ConfirmPopup } from 'primereact/confirmpopup';
 import { Menu, MenuProps } from 'primereact/menu';
 import { MenuItemCommandParams } from 'primereact/menuitem';
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export type FnReturn<T = any, R = any> = (value: T) => R;
 export function resolveFnReturn<T = any, R = any>(value: R | FnReturn<R>, data: T): R {
