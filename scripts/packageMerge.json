@@ -1,0 +1,19 @@
+{
+    "name": "@fot/fisher_node_ui",
+    "main": "dist/index.js",
+    "module": "dist/index.es.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "/dist"
+    ],
+    "publishConfig": {
+        "registry": "http://nexus.lan.fot.cool/repository/NpmHosted/",
+        "access": "restricted"
+    },
+    "scripts": {
+        "prepublish": ""
+    },
+    "dependencies": {
+        "@babel/runtime": "7.13.10"
+    }
+}

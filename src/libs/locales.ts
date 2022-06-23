@@ -1,0 +1,48 @@
+import { addLocale } from 'primereact/api';
+
+export const PrimereactLocales = {
+  en: {
+    accept: 'Yes',
+    reject: 'No',
+    choose: 'Choose',
+    upload: 'Upload',
+    cancel: 'Cancel',
+    dayNames: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    dayNamesShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    dayNamesMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+    monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    monthNamesShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    today: 'Today',
+    clear: 'Clear',
+    weekHeader: 'Wk',
+    firstDayOfWeek: 0,
+    dateFormat: 'dd/mm/yy',
+    weak: 'Weak',
+    medium: 'Medium',
+    strong: 'Strong',
+    passwordPrompt: 'Enter a password',
+  },
+  zh: {
+    accept: '是',
+    reject: '否',
+    choose: '选择',
+    upload: '上载',
+    cancel: '取消',
+    dayNames: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
+    dayNamesShort: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
+    dayNamesMin: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
+    monthNames: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+    monthNamesShort: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+    today: '今天',
+    clear: '清除',
+    weekHeader: '星期',
+    firstDayOfWeek: 0,
+    dateFormat: 'dd/mm/yy',
+    weak: '弱',
+    medium: '中',
+    strong: '强',
+    passwordPrompt: '请输入密码',
+  },
+};
+
+Object.keys(PrimereactLocales).forEach((local) => addLocale(local, PrimereactLocales[local]));

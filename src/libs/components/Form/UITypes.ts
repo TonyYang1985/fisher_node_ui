@@ -1,0 +1,16 @@
+export const UITypes = {
+  display: 'display',
+  text: 'text',
+  textarea: 'textarea',
+  select: 'select',
+  number: 'number',
+  password: 'password',
+  checkbox: 'checkbox',
+  radio: 'radio',
+  checkboxes: 'checkboxes',
+  switch: 'switch',
+  datetime: 'datetime',
+  date: 'date',
+  time: 'time',
+  currency: 'currency',
+};
