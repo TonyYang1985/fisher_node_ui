@@ -1,6 +1,6 @@
 {
   "name": "@fot/back_office_ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "engines": {
     "node": ">=14.16.x",
@@ -62,7 +62,9 @@
     "react-transition-group": "^4.4.2",
     "sharp": "^0.29.3",
     "swr": "^1.1.0",
-    "yup": "^0.32.11"
+    "yup": "^0.32.11",
+    "jsonwebtoken": "^8.5.1",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
