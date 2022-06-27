@@ -1,6 +1,6 @@
 {
   "name": "@fot/back_office_ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "engines": {
     "node": ">=14.16.x",

@@ -1,8 +1,10 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable prettier/prettier */
+import React, { useEffect } from 'react';
 import { globalStorage } from '@fot/globalstorage';
 import { useTranslation } from 'next-i18next';
 import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
-import { useEffect } from 'react';
 import { BaseController } from '../BaseController';
 import { CONSTS } from '../const';
 
@@ -21,7 +23,7 @@ class AlertModalStore {
 
   open = false;
 
-  callback = () => {};
+  callback = () => { };
 }
 
 export class AlertModalController extends BaseController {
