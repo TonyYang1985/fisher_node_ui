@@ -1,0 +1,20 @@
+configcenter:
+  SystemConfigs:
+    getAllConfigs:
+      method: GET
+      endPoint: '{{configcenterBaseUrl}}/configcenter/configs'
+    getAllNames:
+      method: GET
+      endPoint: '{{configcenterBaseUrl}}/configcenter/configs/names/all'
+    getValue:
+      method: GET
+      endPoint: '{{configcenterBaseUrl}}/configcenter/configs/{{name}}'
+    setValue:
+      method: POST
+      endPoint: '{{configcenterBaseUrl}}/configcenter/configs/{{name}}'
+    setEnable:
+      method: PUT
+      endPoint: '{{configcenterBaseUrl}}/configcenter/configs/{{name}}/setEnable'
+    setDisable:
+      method: PUT
+      endPoint: '{{configcenterBaseUrl}}/configcenter/configs/{{name}}/setDisable'

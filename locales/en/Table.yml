@@ -1,0 +1,14 @@
+Pagination: 
+  emptyData: Nothing here.
+  showPageSize: Showing {first} to {last} of {totalRecords} products
+Search: 
+  placeholder: Search
+  help: Use space to separate criterias, etc. bike car cat
+operations: Operations
+new: New
+delete: 
+  label: Remove
+  message: Are you sure you want to proceed?
+edit: Edit
+view: View
+select: Select

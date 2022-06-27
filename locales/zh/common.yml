@@ -1,0 +1,14 @@
+Application:
+  name: Back Office UI
+  version: v1
+  logo: '/logo.png'
+ConfirmModal:
+  confirm: 确定
+  cancel: 取消
+  defaultHeader: 系统消息
+  defaultContent: 请确认您的操作。
+Notifier:
+  success: 成功
+  error: 错误
+  warn: 警告
+  info: 信息

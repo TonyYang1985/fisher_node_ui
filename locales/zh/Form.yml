@@ -1,0 +1,7 @@
+submit: 提交
+cancel: 取消
+loading: 载入中...
+edit: 编辑
+abortingEdit: 退出编辑
+contentChanged: 您已经修改过当前表单数据，确定要取消编辑吗？
+validationError: 表单输入内容验证失败。

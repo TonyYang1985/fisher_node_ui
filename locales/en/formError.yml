@@ -1,0 +1,14 @@
+error:
+  validationError: Form validation failed.
+validation:
+  app:
+    registration:
+      forbidden: Sorry, Only valid user can sign in this system, please contact your system administrator.
+  rule:
+    IsEmail: Should be a valid email address.
+    Length: Length should be between {{constraint1}} and {{constraint2}}.
+    IsNumberString: Should be a valid number.
+    IsNumber: Should be a valid number.
+    IsNotEmpty: Should not be empty.
+    Min: Should be minimum {{constraint1}}.
+    Max: Should be maximum {{constraint1}}.

@@ -1,0 +1,9 @@
+title: Sign In Please
+email:
+  text: Email address
+  placeholder: Enter your email please
+password:
+  text: Password
+  placeholder: Enter your Password please
+rememberMe: Remember Me
+signIn: Sign In

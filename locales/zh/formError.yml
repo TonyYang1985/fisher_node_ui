@@ -1,0 +1,14 @@
+error:
+  validationError: 表单数据输入有误。
+validation:
+  app:
+    registration:
+      forbidden: 抱歉，只有合法用户可以登录系统，请联系你的系统管理员。
+  rule:
+    IsEmail: 该字段必须是有效的电子邮件。
+    Length: 该字段长度必须是 {{constraint1}} 到 {{constraint2}} 个字符。
+    IsNumberString: 该字段必须是有效的数字。
+    IsNumber: 该字段必须是有效的数字。
+    IsNotEmpty: 该字段必须填写。
+    Min: 该字段最小值是 {{constraint1}}。
+    Max: 该字段最大值是 {{constraint1}}。

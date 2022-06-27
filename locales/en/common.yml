@@ -1,0 +1,14 @@
+Application:
+  name: Back Office UI
+  version: v1
+  logo: '/logo.png'
+ConfirmModal:
+  confirm: Confirm
+  cancel: Cancel
+  defaultHeader: System info
+  defaultContent: Please confirm your operation.
+Notifier:
+  success: Success
+  error: Error
+  warn: Warn
+  info: Info

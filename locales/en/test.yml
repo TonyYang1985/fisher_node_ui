@@ -1,0 +1,19 @@
+test:
+  title: FormLib Showcase Page
+  keywords: Test page
+  keywords1: Please confirm your name.
+  alert: This is an alert!
+form:
+  text: T.E.X.T
+  mustYes: You have to say YES!
+  checkbox: Do you agree?
+  agreeYes: Of course YES!
+labels:
+  name: Nmae
+  password: Password
+  email: Email
+  age: Age
+  salary: Salary
+  transactionDescription: Transaction
+  datetime: Datetime
+  

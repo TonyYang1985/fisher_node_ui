@@ -1,0 +1,9 @@
+title: 请登录
+email:
+  text: 电子邮件
+  placeholder: 请输入您的邮箱地址
+password:
+  text: 登录密码
+  placeholder: 请输入您的登录密码
+rememberMe: 保持登录
+signIn: 进入系统

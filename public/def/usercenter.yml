@@ -1,0 +1,142 @@
+usercenter:
+  Onboarding:
+    getCaptcha:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/signIn/captcha'
+    signInByPassword:
+      method: POST
+      endPoint: '{{usercenterBaseUrl}}/usercenter/signIn/pwd'
+    signInByEmail:
+      method: POST
+      endPoint: '{{usercenterBaseUrl}}/usercenter/signIn/email'
+    signInWithTokenThatComesFromEmail:
+      method: POST
+      endPoint: '{{usercenterBaseUrl}}/usercenter/signIn/emailToken'
+    signUpFormFieldCheck:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/signUp/check/{{app}}'
+    signUp:
+      method: POST
+      endPoint: '{{usercenterBaseUrl}}/usercenter/signUp'
+    refreshToken:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/refreshToken'
+    signOut:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/signOut'
+  Api:
+    getAllFunctionsAlreadyRegisteredInCasbinService:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/apis/{{app}}/functions'
+    reloadPolicies:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/apis/policies/reload'
+    loadApisFromAllModules:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/apis/load'
+    syncWhitelist:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/apis/whitelist/sync'
+    queryPolicies:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/apis/policies'
+  Resources:
+    listAllApisAlreadyRegisteredInCasbinService:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/resources/apis'
+    getApiWhiteList:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/resources/apis/whiteList'
+    getAllUiAreasAlreadyRegistredInCasbinService:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/resources/uis'
+    getAllMenuItemsAlreadyRegistredInCasbinService:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/resources/menus'
+    getAllFunctionsAlreadyRegisteredInCasbinService:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/resources/functions/{{app}}'
+    getAllApisOfFunction:
+      method: GET
+      endPoint: >-
+        {{usercenterBaseUrl}}/usercenter/resources/functions/apis/{{functionName}}
+    permissionCheckForUI:
+      method: POST
+      endPoint: '{{usercenterBaseUrl}}/usercenter/resources/checkUI'
+  Roles:
+    addFunctionsToRole:
+      method: POST
+      endPoint: '{{usercenterBaseUrl}}/usercenter/roles/{{roleId}}/functions'
+    setFunctionsForRole:
+      method: PUT
+      endPoint: '{{usercenterBaseUrl}}/usercenter/roles/{{roleId}}/functions'
+    getFunctionsByRole:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/roles/{{roleId}}/functions'
+    assignUsersToRole:
+      method: POST
+      endPoint: '{{usercenterBaseUrl}}/usercenter/roles/{{roleId}}/users'
+    createRole:
+      method: POST
+      endPoint: '{{usercenterBaseUrl}}/usercenter/roles'
+    updateRole:
+      method: PUT
+      endPoint: '{{usercenterBaseUrl}}/usercenter/roles/{{roleId}}'
+    removeRole:
+      method: DELETE
+      endPoint: '{{usercenterBaseUrl}}/usercenter/roles/{{roleId}}'
+    getRole:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/roles/{{roleId}}'
+    getRolesOfApp:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/roles/{{app}}/all'
+  Users:
+    getMySession:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/mySession'
+    getCurrentUserInformation:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/myInfo'
+    updateCurrentSignInUserInformation:
+      method: PUT
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/myInfo'
+    updateCurrentSignInUserAvatar:
+      method: PUT
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/myInfo/avatar'
+    updateCurrentSignInUserPassword:
+      method: PUT
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/myInfo/password'
+    getUserInfoIgnoreDel:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/{{userId}}/getUserInfoIgnoreDel'
+    getMyAppUserInfo:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/{{userId}}/getMyAppUserInfo'
+    getUserInfo:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/{{userId}}/getUserInfo'
+    getAllAdminUsers:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/getAllAdminUsers'
+    getUserRoles:
+      method: GET
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/{{userId}}/roles'
+    createAdminUser:
+      method: POST
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/admin/users'
+    updateAdminUser:
+      method: PUT
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/admin/users/{{userId}}'
+    removeAdminUser:
+      method: DELETE
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/admin/users/{{userId}}'
+    lockAdminUser:
+      method: PUT
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/admin/users/{{userId}}/lock'
+    unlockAdminUser:
+      method: PUT
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/admin/users/{{userId}}/unlock'
+    assignRolesToAdminUser:
+      method: PUT
+      endPoint: '{{usercenterBaseUrl}}/usercenter/users/admin/users/{{userId}}/roles'

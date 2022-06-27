@@ -1,0 +1,18 @@
+test:
+  title: 组件展示页！
+  keywords: 测试页
+  keywords1: 请确认你的名字。
+  alert: 这是个不认真的警告。⚠️
+form:
+  text: 泰科斯特
+  mustYes: 你咋不上天呢！
+  checkbox: 是否同意🙆
+  agreeYes: 必须同意🤝
+labels:
+  name: Nmae
+  password: Password
+  email: Email
+  age: Age
+  salary: Salary
+  transactionDescription: Transaction
+  datetime: Datetime

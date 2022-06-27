@@ -1,0 +1,7 @@
+maxFileSize: 25
+minioSSL: false
+minioEndPoint: oss.sg.fot.cool:80
+minioBucket: condo-dev
+minioAccessURL: http://oss.sg.fot.cool
+minioAccessKey: fot
+minioSecretKey: fot123456

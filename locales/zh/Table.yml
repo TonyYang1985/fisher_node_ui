@@ -1,0 +1,14 @@
+Pagination: 
+  emptyData: 这里什么都没有。
+  showPageSize: 第 {first} 至 {last} 条数据，总计 {totalRecords} 条数据
+Search: 
+  placeholder: 搜索
+  help: 使用半角空格分隔多个条件，例如：bike car cat 
+operations: 操作
+new: 添加
+delete:
+  label: 删除
+  message: 您确认继续执行吗？
+edit: 编辑
+view: 查看
+select: 选择
