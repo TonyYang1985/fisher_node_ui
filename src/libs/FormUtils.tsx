@@ -1,4 +1,7 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable import/no-duplicates */
 /* eslint-disable react-hooks/rules-of-hooks */
+import React from 'react';
 import { FormikProps } from 'formik';
 import _ from 'lodash';
 import { TFunction, useTranslation } from 'next-i18next';

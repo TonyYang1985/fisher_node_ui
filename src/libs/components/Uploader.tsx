@@ -1,3 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable prettier/prettier */
+import React from 'react';
 import axios from 'axios';
 import { FileUpload, FileUploadProps } from 'primereact/fileupload';
 import { restClient } from '../RC';

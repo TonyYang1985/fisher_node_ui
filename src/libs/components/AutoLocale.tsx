@@ -1,5 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable prettier/prettier */
+import React, { useEffect } from 'react';
 import Router, { useRouter } from 'next/router';
-import { useEffect } from 'react';
 import { datetime } from '../utils/datetime';
 
 export const AutoLocale = () => {

@@ -1,7 +1,9 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable prettier/prettier */
+import React, { useEffect, useState } from 'react';
 import { RestClient } from '@fot/restclient';
 import Router from 'next/router';
 import { ProgressSpinner } from 'primereact/progressspinner';
-import { useEffect, useState } from 'react';
 
 class SwitchingStore {
   loading = false;

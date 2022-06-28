@@ -1,7 +1,9 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable prettier/prettier */
+import React, { useEffect } from 'react';
 import { globalStorage } from '@fot/globalstorage';
 import { useTranslation } from 'next-i18next';
 import { confirmDialog } from 'primereact/confirmdialog';
-import { useEffect } from 'react';
 import { CONSTS } from '../const';
 
 export const ConfirmModal = () => {
