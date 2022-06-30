@@ -18,12 +18,13 @@ Object.assign(packageJson, {
 
 export default [
   {
-    input: 'temp/index.js',
+    input: 'temp/src/libs/index.js',
     output: [
       {
         file: packageJson.main,
         format: 'cjs',
         sourcemap: true,
+        globals: { react: 'React' },
       },
       {
         file: packageJson.module,
@@ -40,13 +41,21 @@ export default [
       commonjs(),
       babel({
         babelHelpers: 'runtime',
-        presets: ['@babel/preset-env', '@babel/preset-react'],
+        presets: [
+          '@babel/preset-env',
+          [
+            '@babel/preset-react',
+            {
+              runtime: 'automatic',
+            },
+          ],
+        ],
         plugins: [['@babel/plugin-transform-runtime', { helpers: true, regenerator: true }]],
       }),
     ],
   },
   {
-    input: 'temp/index.d.ts',
+    input: 'temp/src/libs/index.d.ts',
     output: [{ file: packageJson.types, format: 'es' }],
     plugins: [excludeDependenciesFromBundle(), dts()],
   },
