@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import _ from 'lodash';
 import { Chip } from 'primereact/chip';
 import { Skeleton } from 'primereact/skeleton';

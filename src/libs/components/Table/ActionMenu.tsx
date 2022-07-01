@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { globalStorage } from '@fot/globalstorage';
 import _ from 'lodash';
 import { nanoid } from 'nanoid';

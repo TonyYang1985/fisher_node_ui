@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable no-unused-vars */
 import classNames from 'classnames';
 import dayjs from 'dayjs';
 import _ from 'lodash';
@@ -132,13 +134,7 @@ export function TheTable<T, S extends PaginationIn>({
       }
       return true;
     };
-    return routerDriver === 'nextjsRouter'
-      ? _router
-      : {
-          query: store,
-          replace: handler,
-          push: handler,
-        };
+    return routerDriver === 'nextjsRouter' ? _router : { query: store, replace: handler, push: handler };
   }, [_router, routerDriver, store]);
 
   useEffect(() => {
@@ -286,14 +282,7 @@ export function TheTable<T, S extends PaginationIn>({
             }}
           />
         ) : null}
-        {leftToolbar
-          ? leftToolbar({
-              rowData: undefined,
-              pageData: data,
-              selectedItems,
-              done: () => setSelectedItems([]),
-            })
-          : undefined}
+        {leftToolbar ? leftToolbar({ rowData: undefined, pageData: data, selectedItems, done: () => setSelectedItems([]) }) : undefined}
       </>
     );
   };
@@ -309,16 +298,7 @@ export function TheTable<T, S extends PaginationIn>({
                 <Toolbar
                   className="p-toolbar"
                   left={toolbarButtons(data, selectedItems)}
-                  right={
-                    rightToolbar
-                      ? rightToolbar({
-                          rowData: undefined,
-                          pageData: data,
-                          selectedItems,
-                          done: () => {},
-                        })
-                      : undefined
-                  }
+                  right={rightToolbar ? rightToolbar({ rowData: undefined, pageData: data, selectedItems, done: () => { } }) : undefined}
                 />
               ) : null}
               {children}
@@ -360,7 +340,7 @@ export function TheTable<T, S extends PaginationIn>({
                       rowData,
                       pageData: data,
                       selectedItems,
-                      done: () => {},
+                      done: () => { },
                     });
                   }
                   if (view && !enableSelection) {

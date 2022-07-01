@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import classNames from 'classnames';
 import { TFunction, useTranslation } from 'next-i18next';
 import { Message } from 'primereact/message';

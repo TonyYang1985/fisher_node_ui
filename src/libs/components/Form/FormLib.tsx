@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { URIParam } from '@fot/restclient';
 import { FormikHelpers, FormikProps } from 'formik';
 import _ from 'lodash';

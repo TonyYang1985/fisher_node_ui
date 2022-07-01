@@ -40,7 +40,7 @@ function FormErrors({ formError, i18nNS = 'formError' }: FormErrorsProps) {
   useEffect(() => {
     if (formError) {
       const msgs = formError.formMessages
-        .map((msg, i) => {
+        .map((msg) => {
           return t(`${i18nNS}:${msg}`);
         })
         .map((msg) => ({ severity: 'error', detail: msg, sticky: true, closable: false }));

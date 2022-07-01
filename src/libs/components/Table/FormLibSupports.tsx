@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { TFunction } from 'next-i18next';
 import { PropsWithChildren } from 'react';
 import { PropsWithTrans } from '../../i18n';

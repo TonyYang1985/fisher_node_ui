@@ -17,7 +17,7 @@ export const FormGrid = ({ layout, items = [], verbose }: FormGridProps) => {
   }
   return (
     <div>
-      {layout.map((row, r) =>
+      {layout.map((row) =>
         !items[i] ? null : (
           <div key={`row-${i}`} className="p-fluid p-formgrid p-grid p-ai-start">
             {row

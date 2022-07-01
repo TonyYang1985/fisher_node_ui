@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import printValue from 'yup/lib/util/printValue';
 export const zh = {
   mixed: {

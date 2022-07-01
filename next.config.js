@@ -34,6 +34,11 @@ module.exports = (phase) => {
       localePath,
       localeExtension,
     },
+    eslint: {
+      // Warning: This allows production builds to successfully complete even if
+      // your project has ESLint errors.
+      ignoreDuringBuilds: false,
+    },
     images: {
       domains: ['spic.one'],
     },
@@ -49,6 +54,10 @@ module.exports = (phase) => {
       if (!options.isServer) {
         config.resolve.fallback.fs = false;
       }
+      config.module = {
+        ...config.module,
+        exprContextCritical: false,
+      };
       return config;
     },
     async rewrites() {

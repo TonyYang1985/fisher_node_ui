@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable prettier/prettier */
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Router, { useRouter } from 'next/router';
 import { datetime } from '../utils/datetime';
 

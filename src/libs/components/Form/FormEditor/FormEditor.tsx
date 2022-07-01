@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Formik, FormikErrors, FormikHelpers, FormikProps } from 'formik';
 import _ from 'lodash';
 import { TFunction, useTranslation } from 'next-i18next';

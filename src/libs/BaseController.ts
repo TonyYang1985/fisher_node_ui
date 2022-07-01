@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/rules-of-hooks */
 import { globalStorage } from '@fot/globalstorage';
 import { RestClientError } from '@fot/restclient';

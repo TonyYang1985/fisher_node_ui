@@ -40,7 +40,9 @@ export const ConfirmationButton = ({ dialogProps = {}, message, ref, onClick, ..
               onHide(result);
             }
             setShow(false);
-          } catch (error) {}
+          } catch (error) {
+            console.log(error);
+          }
         }}
         message={message ?? msg}
         icon={icon ?? 'pi pi-exclamation-triangle'}
@@ -52,7 +54,9 @@ export const ConfirmationButton = ({ dialogProps = {}, message, ref, onClick, ..
             if (buttonNode.current.callback) {
               buttonNode.current.callback(buttonNode.current.e);
             }
-          } catch (error) {}
+          } catch (error) {
+            console.log(error);
+          }
         }}
       />
     </>

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { TFunction, useTranslation } from 'next-i18next';
 import { Card } from 'primereact/card';
 import React, { PropsWithChildren } from 'react';
