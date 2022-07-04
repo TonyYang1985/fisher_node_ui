@@ -1,17 +1,17 @@
 import Router, { useRouter } from 'next/router';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useLayoutEffect, useState } from 'react';
 
 export const useMenuMode = () => {
-  const [menuMode, setMenuMode] = useState('');
+  const [menuMode, setMenuMode] = useState<string>('');
   const { locale } = useRouter();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const menuMode = localStorage.getItem('sg.fot.menuMode') ?? 'sidebar';
     setMenuMode(menuMode);
     console.log(menuMode);
-  }, [menuMode]);
+  }, []);
 
-  const changeMenuMode = useCallback((mode) => {
+  const changeMenuMode = useCallback((mode: string) => {
     if (mode) {
       localStorage.setItem('sg.fot.menuMode', mode);
       setMenuMode(mode);
@@ -22,5 +22,5 @@ export const useMenuMode = () => {
     Router.replace(Router.asPath, Router.asPath, { locale: locale });
   }, []);
 
-  return [menuMode, changeMenuMode];
+  return { menuMode, changeMenuMode };
 };
