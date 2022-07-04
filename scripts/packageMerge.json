@@ -1,5 +1,5 @@
 {
-    "name": "@fot/fisher_node_ui",
+    "name": "@gaias/fisher_node_ui",
     "main": "dist/index.js",
     "module": "dist/index.es.js",
     "types": "dist/index.d.ts",

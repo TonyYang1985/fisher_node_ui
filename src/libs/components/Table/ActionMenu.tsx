@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { globalStorage } from '@fot/globalstorage';
+import { globalStorage } from '@gaias/globalstorage';
 import _ from 'lodash';
 import { nanoid } from 'nanoid';
 import { TFunction } from 'next-i18next';

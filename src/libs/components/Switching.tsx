@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable prettier/prettier */
 import React, { useEffect, useState } from 'react';
-import { RestClient } from '@fot/restclient';
+import { RestClient } from '@gaias/restclient';
 import Router from 'next/router';
 import { ProgressSpinner } from 'primereact/progressspinner';
 

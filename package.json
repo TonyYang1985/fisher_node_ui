@@ -1,6 +1,6 @@
 {
-  "name": "@fot/back_office_ui",
-  "version": "1.1.2",
+  "name": "@gaias/back_office_ui",
+  "version": "1.0.0",
   "license": "MIT",
   "engines": {
     "node": ">=14.16.x",
@@ -22,8 +22,8 @@
     "@types/react": "17.0.37"
   },
   "dependencies": {
-    "@fot/globalstorage": "^1.0.0",
-    "@fot/restclient": "^1.0.2",
+    "@gaias/globalstorage": "^1.0.0",
+    "@gaias/restclient": "^1.0.0",
     "@fullcalendar/core": "^5.10.1",
     "@fullcalendar/daygrid": "^5.10.1",
     "@fullcalendar/interaction": "^5.10.1",

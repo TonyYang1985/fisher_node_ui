@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/rules-of-hooks */
-import { globalStorage } from '@fot/globalstorage';
-import { RestClientError } from '@fot/restclient';
+import { globalStorage } from '@gaias/globalstorage';
+import { RestClientError } from '@gaias/restclient';
 import _ from 'lodash';
 import { i18n, useTranslation } from 'next-i18next';
 import { useState } from 'react';

@@ -1,6 +1,6 @@
-import { globalStorage } from '@fot/globalstorage';
-import { RestClient } from '@fot/restclient';
-import { HttpBackend, RequestHeader, StateProvider } from '@fot/restclient/dist/HttpBackend';
+import { globalStorage } from '@gaias/globalstorage';
+import { RestClient } from '@gaias/restclient';
+import { HttpBackend, RequestHeader, StateProvider } from '@gaias/restclient/dist/HttpBackend';
 import getConfig from 'next/config';
 
 const { publicRuntimeConfig } = getConfig();

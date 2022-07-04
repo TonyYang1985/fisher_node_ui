@@ -2,7 +2,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable prettier/prettier */
 import { useEffect } from 'react';
-import { globalStorage } from '@fot/globalstorage';
+import { globalStorage } from '@gaias/globalstorage';
 import { useTranslation } from 'next-i18next';
 import { confirmDialog } from 'primereact/confirmdialog';
 import { CONSTS } from '../const';

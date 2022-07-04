@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/alt-text */
-import { globalStorage } from '@fot/globalstorage';
+import { globalStorage } from '@gaias/globalstorage';
 import { dequal } from 'dequal/lite';
 import _ from 'lodash';
 import { Message } from 'primereact/message';

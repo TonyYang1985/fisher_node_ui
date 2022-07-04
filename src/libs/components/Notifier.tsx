@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable prettier/prettier */
 import React, { useEffect, useRef } from 'react';
-import { globalStorage } from '@fot/globalstorage';
+import { globalStorage } from '@gaias/globalstorage';
 import { useTranslation } from 'next-i18next';
 import { Toast } from 'primereact/toast';
 

@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { URIParam } from '@fot/restclient';
+import { URIParam } from '@gaias/restclient';
 import { FormikHelpers, FormikProps } from 'formik';
 import _ from 'lodash';
 import { useTranslation } from 'next-i18next';
