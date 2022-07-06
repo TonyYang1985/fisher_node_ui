@@ -6,6 +6,7 @@ export * from './ConfirmModal';
 export * from './DataSource';
 export * from './Form';
 export * from './Icon';
+export * from './MenuLocker';
 export * from './MenuMode';
 export * from './Notifier';
 export * from './Switching';
