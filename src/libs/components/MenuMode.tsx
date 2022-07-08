@@ -18,6 +18,10 @@ export const useMenuMode = () => {
       } else {
         localStorage.setItem('sg.fot.menuLocker', 'false');
       }
+      //init other config
+      localStorage.setItem('sg.fot.ActiveMenu', '0');
+      localStorage.setItem('sg.fot.menuLocker', 'false');
+      localStorage.setItem('sg.fot.MenuPopDown', `false`);
       setMenuMode(mode);
     } else {
       localStorage.removeItem('sg.fot.menuMode');
