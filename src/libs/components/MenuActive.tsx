@@ -67,11 +67,13 @@ export const useExtendRootMenu = () => {
     const extendRootIndex = parseInt(extendRoot);
     if (_.isNumber(activeIndex)) {
       if (extendRootIndex === activeIndex) {
+        localStorage.setItem('sg.fot.MenuPopDown', 'false');
         const activeRoot = localStorage.getItem('sg.fot.ActiveRoot') ?? '0';
         const activeRootIndex = parseInt(activeRoot);
         localStorage.setItem('sg.fot.ExtendRoot', `${activeRootIndex}`);
         setExtendRootIndex(activeRootIndex);
       } else {
+        localStorage.setItem('sg.fot.MenuPopDown', 'true');
         localStorage.setItem('sg.fot.ExtendRoot', `${activeIndex}`);
         setExtendRootIndex(activeIndex);
       }
