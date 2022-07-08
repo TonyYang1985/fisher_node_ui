@@ -65,11 +65,16 @@ export const useExtendRootMenu = () => {
   const changeExtendRootMenu = useCallback((activeIndex: number) => {
     const extendRoot = localStorage.getItem('sg.fot.ExtendRoot') ?? '0';
     const extendRootIndex = parseInt(extendRoot);
+    //sub menu PopDown
+    const menuPopDown = localStorage.getItem('sg.fot.MenuPopDown') ?? 'false';
+    const popDown = menuPopDown.toLowerCase() == 'false' ? false : true;
+    //active  root
+    const activeRoot = localStorage.getItem('sg.fot.ActiveRoot') ?? '0';
+    const activeRootIndex = parseInt(activeRoot);
+
     if (_.isNumber(activeIndex)) {
       if (extendRootIndex === activeIndex) {
-        localStorage.setItem('sg.fot.MenuPopDown', 'false');
-        const activeRoot = localStorage.getItem('sg.fot.ActiveRoot') ?? '0';
-        const activeRootIndex = parseInt(activeRoot);
+        localStorage.setItem('sg.fot.MenuPopDown', popDown ? 'false' : 'true');
         localStorage.setItem('sg.fot.ExtendRoot', `${activeRootIndex}`);
         setExtendRootIndex(activeRootIndex);
       } else {
