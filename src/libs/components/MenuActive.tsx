@@ -67,8 +67,10 @@ export const useExtendRootMenu = () => {
     const extendRootIndex = parseInt(extendRoot);
     if (_.isNumber(activeIndex)) {
       if (extendRootIndex === activeIndex) {
-        localStorage.setItem('sg.fot.ExtendRoot', `0`);
-        setExtendRootIndex(0);
+        const activeRoot = localStorage.getItem('sg.fot.ExtendRoot') ?? '0';
+        const activeRootIndex = parseInt(activeRoot);
+        localStorage.setItem('sg.fot.ExtendRoot', `${activeRootIndex}`);
+        setExtendRootIndex(activeRootIndex);
       } else {
         localStorage.setItem('sg.fot.ExtendRoot', `${activeIndex}`);
         setExtendRootIndex(activeIndex);
