@@ -1,15 +1,16 @@
 /* eslint-disable no-unused-vars */
 import axios from 'axios';
-import { FileUpload, FileUploadProps } from 'primereact/fileupload';
+import { FileUploadProps } from 'primereact/fileupload';
 import { restClient } from '../RC';
 import { DataSource, RestClientDS } from './DataSource';
+import { FileUpload } from './FileUpload';
 
-export type UploaderProps = {
+export type FileUploaderProps = {
   onChange?: (result: any) => void;
   rcDs?: RestClientDS;
 } & FileUploadProps;
 
-export const Uploader = ({ url, maxFileSize, onUpload, onChange, rcDs, ...props }: UploaderProps) => {
+export const FileUploader = ({ url, maxFileSize, onUpload, onChange, rcDs, ...props }: FileUploaderProps) => {
   const comp = (uploadUrl: string | undefined) => (
     <DataSource ctlDs={[[uploadUrl], (uploadUrl) => axios.get(uploadUrl).then((resp) => resp.data)]}>
       <DataSource.Data>
