@@ -2,12 +2,15 @@
 
 export * from './AlertModal';
 export * from './AutoLocale';
+export * from './ColorScheme';
+export * from './ComponentTheme';
 export * from './ConfirmModal';
 export * from './DataSource';
 export * from './FileUpload';
 export * from './FileUploader';
 export * from './Form';
 export * from './Icon';
+export * from './LayoutTheme';
 export * from './MenuActive';
 export * from './MenuLocker';
 export * from './MenuMode';
